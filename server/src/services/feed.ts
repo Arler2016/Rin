@@ -180,12 +180,10 @@ export function FeedService(): Hono<{
         await profileAsync(c, 'feed_create_cache_invalidate', () => cache.deletePrefix('feeds_'));
         if (result.length === 0) {
             return c.text('Failed to insert', 500);
-        } else {
-            const url = new URL(c.req.url);
-            const baseUrl = `${url.protocol}//${url.host}`;
+                } else {
             return c.json({
                 ...result[0],
-                url: `${baseUrl}/feed/${result[0].insertedId}`
+                url: `https://rin-server.mjuhyg251.workers.dev/feed/${result[0].insertedId}`
             });
         }
     });
