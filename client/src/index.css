@@ -18,13 +18,21 @@
     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+  /* 钉钉进步体 */
+@font-face {
+  font-family: "DingTalk";
+  font-style: normal;
+  font-display: auto;
+  font-weight: 400;
+  src: url(/DingTalk%20JinBuTi.ttf) format("truetype");
+}
 
 body {
   @apply text-gray-800;
   background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
   background-attachment: fixed;
   min-height: 100vh;
-  font-family: Cantarell, "Source Han Serif CN VF" !important;
+  font-family: "DingTalk", Cantarell, "Source Han Serif CN VF" !important;
 }
 
 textarea:focus {
@@ -33,7 +41,7 @@ textarea:focus {
 
 .wmde-markdown {
   @apply bg-w;
-  font-family: Cantarell, "Source Han Serif CN VF" !important;
+  font-family: "DingTalk", Cantarell, "Source Han Serif CN VF" !important;
 }
 
 .w-md-editor {
