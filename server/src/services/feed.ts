@@ -183,7 +183,7 @@ export function FeedService(): Hono<{
                 } else {
             return c.json({
                 ...result[0],
-                url: `https://rin-server.mjuhyg251.workers.dev/feed/${result[0].insertedId}`
+                url: `https://publish.pdm.375867777.xyz/feed/${result[0].insertedId}`
             });
         }
     });
