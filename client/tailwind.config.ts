@@ -13,10 +13,10 @@ export default {
         'theme-hover': 'rgb(var(--theme-hover-rgb) / <alpha-value>)',
         'theme-active': 'rgb(var(--theme-active-rgb) / <alpha-value>)',
         'background': {
-          'light': '#f8f9fa',
-          'dark': '#0a0a0f',
+          'light': '#f0f2f5',
+          'dark': '#0f0f1a',
         },
-        'dark': "#1a1a2e"
+        'dark': "rgba(26, 26, 46, 0.6)"
       },
       transitionProperty: {
         'height': 'height',
