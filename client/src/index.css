@@ -221,3 +221,56 @@ a.toc-link {
 .is-active-link::before {
   @apply bg-theme;
 }
+/* ===== 排版优化 ===== */
+
+/* 正文行距 */
+.feed-content, .wmde-markdown, article p {
+  line-height: 1.8 !important;
+  margin-bottom: 1.2em !important;
+}
+
+/* 标题间距 */
+article h1, article h2, article h3 {
+  margin-top: 1.5em !important;
+  margin-bottom: 0.6em !important;
+  line-height: 1.4 !important;
+}
+
+/* 列表间距 */
+article ul, article ol {
+  margin-bottom: 1.2em !important;
+  padding-left: 1.5em !important;
+}
+
+article li {
+  margin-bottom: 0.4em !important;
+  line-height: 1.7 !important;
+}
+
+/* 代码块间距 */
+article pre {
+  margin: 1.5em 0 !important;
+  padding: 1.2em !important;
+  border-radius: 12px !important;
+}
+
+/* 引用块 */
+article blockquote {
+  margin: 1.2em 0 !important;
+  padding: 0.8em 1.2em !important;
+  border-left: 4px solid var(--theme-rgb) !important;
+  background: rgba(255,255,255,0.05) !important;
+  border-radius: 0 8px 8px 0 !important;
+}
+
+/* 图片间距 */
+article img {
+  margin: 1.5em auto !important;
+  border-radius: 12px !important;
+}
+
+/* 分割线 */
+article hr {
+  margin: 2em 0 !important;
+  opacity: 0.3 !important;
+}
