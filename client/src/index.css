@@ -20,7 +20,10 @@
 }
 
 body {
-  @apply bg-background-light dark:bg-background-dark text-gray-800;
+  @apply text-gray-800;
+  background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
   font-family: Cantarell, "Source Han Serif CN VF" !important;
 }
 
