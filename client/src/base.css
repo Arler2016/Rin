@@ -3,27 +3,32 @@
 @tailwind utilities;
 @layer base {
     .bg-w {
-      @apply bg-white dark:bg-dark;
+      @apply bg-white/70 dark:bg-dark;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
   
     .bg-secondary {
-      @apply bg-neutral-100 dark:bg-[#232340];
+      @apply bg-neutral-100/50 dark:bg-[rgba(35,35,64,0.4)];
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     }
   
     .bg-button {
-      @apply hover:bg-neutral-200 dark:hover:bg-[#2a2a4a] active:bg-neutral-300 dark:active:bg-[#33335a];
+      @apply hover:bg-neutral-200/70 dark:hover:bg-[rgba(42,42,74,0.5)] active:bg-neutral-300/80 dark:active:bg-[rgba(51,51,90,0.5)];
     }
 
     .bg-hover {
-      @apply hover:bg-neutral-200 dark:hover:bg-[#2a2a4a];
+      @apply hover:bg-neutral-200/70 dark:hover:bg-[rgba(42,42,74,0.5)];
     }
   
     .shadow-light {
-      @apply shadow-neutral-200/30 dark:shadow-black/30;
+      @apply shadow-neutral-200/30 dark:shadow-black/20;
     }
   
     .shadow-deep {
-      @apply shadow-neutral-200/70 dark:shadow-black/50;
+      @apply shadow-neutral-200/70 dark:shadow-black/40;
     }
   
     .t-primary {
